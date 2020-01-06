@@ -2,5 +2,5 @@
 "hello monde "
  
 ## Installation Ansible
-"on va installer ansible"
+
 ## Configuration
