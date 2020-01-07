@@ -12,3 +12,10 @@
          name: "{{item}}"
       with_items:
         "{{ users}}"
+
+    - name: envoie des authorized_key aux users 
+      authorized_key:
+        user: "{{item}}" 
+        state: present
+        key: "{{ lookup('file', 'keys/id_rsa.pub') }}"
+      with_items: "{{users}}"
