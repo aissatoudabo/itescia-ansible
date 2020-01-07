@@ -13,4 +13,4 @@ all:
     dhcp-server:
       hosts:
         10.0.0.254:
-
+           ansible_ssh_user: dabo
