@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Creer un utilisateur
+      user: 
+         name: toto
